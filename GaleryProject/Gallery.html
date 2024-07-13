@@ -4,23 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gallery Home</title>
+    <!-- Favicon -->
+    <link rel="icon" href="Icons/Favicon.ico">
+    <!-- CSS -->
+    <link rel="stylesheet" href="Css/Main.css">
+    <link rel="stylesheet" href="Css/Gallery.css">
 </head>
 
 <body>
     <!--  .... Menu ....  -->
     <header id="header">
         <a href="index.html" class="btn btn-back"></a>
-        <button id="animals" class="btn"></button>
-        <button id="car" class="btn"></button>
-        <button id="eye" class="btn"></button>
+        <button id="animals" class="btn">Animals</button>
+        <button id="car" class="btn">Car</button>
+        <button id="eye" class="btn">Eye</button>
         <div>
             <button id="all" class="btn">All</button>
         </div>
     </header>
 
     <!-- .... Images .... -->
-    <main>
+    <main class="main">
         <div class="box">
             <img src="Images/Animal-01.jpg" alt="Animal">
         </div>
@@ -85,6 +90,15 @@
             <img src="Images/Car-08.jpg" alt="Car">
         </div>
     </main>
+    <!-- FOOTER -->
+    <footer id="footer">
+        <nav class="social-media">
+            <a href="https://www.instagram.com/" target="_blank" class="social-media-item instagram btn"></a>
+            <a href="https://www.Twitter.com/" target="_blank" class="social-media-item twitter btn"></a>
+            <a href="https://m.facebook.com/" target="_blank" class="social-media-item facebook btn"></a>
+        </nav>
+    </footer>
+    <script src="/js/Gallery.js"></script>
 
 </body>
 

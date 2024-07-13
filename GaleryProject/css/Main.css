@@ -1,0 +1,110 @@
+/* Animation */
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --praimary-color: #1e90ff;
+    --secondary-color: #0808b1;
+    --tertiary-color: #1919dc;
+    --text-color: #fff;
+}
+
+::selection {
+    background-color: transparent;
+}
+
+/* .... Btn .... */
+.btn {
+    width: 100px;
+    height: 35px;
+    margin: 8px;
+    background-color: var(--secondary-color);
+    border: unset;
+    border-radius: 15px;
+    box-shadow: 0 5px 8px #000;
+    cursor: pointer;
+    color: var(--text-color);
+    transition-duration: 0.1s;
+}
+
+.btn:hover {
+    background-color: var(--tertiary-color);
+}
+
+.btn:active {
+    box-shadow: 0 0px 4px #000;
+}
+
+/* Site Loader */
+.site-loader {
+    width: 100%;
+    height: 100%;
+    background-color: var(--praimary-color);
+    background: linear-gradient(45deg, #000, var(--praimary-color), #000);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: grid;
+    place-items: center;
+    transition-duration: 1s;
+}
+
+.loader {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 10px solid #000;
+    border-top-color: var(--secondary-color);
+    animation: spin 1s linear infinite;
+}
+
+/* .... Footer .... */
+/* .... Social Media */
+.social-media-item {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background: no-repeat center center;
+    background-size: 70%;
+}
+
+.facebook {
+    background-image: url(../Icons/facebook.png);
+}
+
+.instagram {
+    background-image: url(../Icons/instagram.png);
+    background-size: 85%;
+}
+
+.twitter {
+    background-image: url(../Icons/Twitter.png);
+}
+
+@media(max-width:768px) {
+    .loader {
+        height: 60px;
+        width: 60px;
+        border-width: 6px;
+    }
+}
